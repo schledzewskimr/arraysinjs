@@ -137,9 +137,9 @@ function playGame(playerOne , playerTwo , playUntil=5){
 function result(){
     playGame(playerOne , playerTwo , 5);
     if (playerOneWins > playerTwoWins) { 
-        console.log(playerOne.Name + " wins game of " + playerOneWins + " out of " + roundCount); 
+        console.log(playerOne.Name + " wins game with " + playerOneWins + " out of " + roundCount); 
     } else if (playerOneWins < playerTwoWins) {
-        console.log(playerTwo.Name + " wins game of " + playerTwoWins + " out of " + roundCount);
+        console.log(playerTwo.Name + " wins game with " + playerTwoWins + " out of " + roundCount);
     } else 
     {
         console.log("tie game");

@@ -38,4 +38,3 @@ console.log(photoShow.prevPhoto());
 console.log(photoShow.prevPhoto());
 console.log(photoShow.prevPhoto());
 
-

@@ -1,7 +1,7 @@
 // The object should have properties for:
 
 // An array called photoList that contains the names of the photos as strings
-const photoShow={ 
+export const photoShow={ 
     photoList: ["photo1","photo2","photo3"],
 // An integer currentPhotoIndex that represents which photo in the photoList is currently displayed
     currentPhotoIndex: 0,
@@ -27,14 +27,16 @@ const photoShow={
 // A function getCurrentPhoto() that returns the current photo from the list.
     getCurrentPhoto: function(){
         return this.photoList[this.currentPhotoIndex];
+    },
+
+    logAllPhoto:function(){
+        console.log(photoShow.getCurrentPhoto());
+        console.log(photoShow.nextphoto());
+        console.log(photoShow.nextphoto());
+        console.log(photoShow.nextphoto());
+        console.log(photoShow.getCurrentPhoto())
+        console.log(photoShow.prevPhoto());
+        console.log(photoShow.prevPhoto());
+        console.log(photoShow.prevPhoto());
     }
 }
-console.log(photoShow.getCurrentPhoto());
-console.log(photoShow.nextphoto());
-console.log(photoShow.nextphoto());
-console.log(photoShow.nextphoto());
-console.log(photoShow.getCurrentPhoto())
-console.log(photoShow.prevPhoto());
-console.log(photoShow.prevPhoto());
-console.log(photoShow.prevPhoto());
-

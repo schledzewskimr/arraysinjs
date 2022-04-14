@@ -43,3 +43,12 @@ describe('unsure of this one', () => {
         expect(thisMeansNothing).toHaveReturned();
     })
 })
+
+describe('did it return?', () =>{
+    test('does next photo return "end of slideshow" at picture 4?', () => {
+        const picture4 = jest.fn(() => true);
+        photoShow.currentPhotoIndex = 3;
+        picture4(photoShow.getcurrentPhoto);
+        expect(picture4).toHaveReturned();
+    })
+})
